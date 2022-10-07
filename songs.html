@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favourites</title>
+    <link rel="stylesheet" href="songs.css">
+    <script src="songs.js"></script>
+</head>
+<body>
+    <h2>Favourite Playlist</h2>
+    <div class="fill">
+    <form class="SongForm" id="fm1">
+        <label for="SongName">Song Name</label>
+        <input type="text" id="SName" name="sName" required /> <br><br>
+        <label for="AlbumName">Album Cover</label>
+        <input type="text" id="AlbumCover" name="aCover" required /> <br><br>
+        <label for="SongArtist">Song Artist</label>
+        <input type="text" id="SArtist" name="sArtist" required /> <br><br>
+        <label for="YearReleased">Year Released</label>
+        <input type="text" id="YearReleased" name="yReleased" required /> <br><br>
+        <input type="submit" id="s" value="Submit" />
+        <input type="reset" id="r" value="Reset" />
+    </form>
+    <br><br>
+    <form id="SortForm">
+        <select name="SortBy" id="SortBy" required>
+          <option value="SongName">Song Name</option>
+          <option value="SongArtist">Song Artist</option>
+          <option value="YearReleased">Year Released</option>
+        </select>
+        <input type="submit" value="Sort" />
+      </form>
+    </div>
+    <br><br>
+    <input type="text" placeholder="Search...." id="Search">
+    <br>
+    <h3 id="TotalSongs"></h3>
+    <table id="SongTable"></table>
+    <script src="songs.js"></script>
+</body>
+</html>
