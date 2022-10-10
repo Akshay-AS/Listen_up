@@ -32,3 +32,22 @@ input{
     border: 1px;
     border-radius: 4px;
 }
+
+
+table{
+
+}
+
+
+td,th{
+    width: 25%;
+    text-align: center;
+    border: 2px solid ;
+}
+
+
+.SongTable{
+    width: 50%;
+    height:20px;
+    
+}
